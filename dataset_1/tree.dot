@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="sentiment_confidence <= 0.5\nentropy = 1.342\nsamples = 9447\nvalue = [5795, 2123, 1529]"] ;
+1 [label="subject_matter <= 7.5\nentropy = 1.45\nsamples = 5690\nvalue = [2994, 1684, 1012]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="candidate <= 2.5\nentropy = 1.297\nsamples = 1663\nvalue = [1066, 335, 262]"] ;
+1 -> 2 ;
+3 [label="entropy = 1.405\nsamples = 491\nvalue = [279, 84, 128]"] ;
+2 -> 3 ;
+4 [label="entropy = 1.22\nsamples = 1172\nvalue = [787, 251, 134]"] ;
+2 -> 4 ;
+5 [label="candidate <= 9.5\nentropy = 1.489\nsamples = 4027\nvalue = [1928, 1349, 750]"] ;
+1 -> 5 ;
+6 [label="entropy = 1.463\nsamples = 3778\nvalue = [1862, 1286, 630]"] ;
+5 -> 6 ;
+7 [label="entropy = 1.517\nsamples = 249\nvalue = [66, 63, 120]"] ;
+5 -> 7 ;
+8 [label="subject_matter <= 3.5\nentropy = 1.072\nsamples = 3757\nvalue = [2801, 439, 517]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="retweet_count <= 113.0\nentropy = 0.563\nsamples = 1155\nvalue = [1037, 33, 85]"] ;
+8 -> 9 ;
+10 [label="entropy = 0.769\nsamples = 710\nvalue = [596, 30, 84]"] ;
+9 -> 10 ;
+11 [label="entropy = 0.081\nsamples = 445\nvalue = [441, 3, 1]"] ;
+9 -> 11 ;
+12 [label="candidate <= 6.5\nentropy = 1.228\nsamples = 2602\nvalue = [1764, 406, 432]"] ;
+8 -> 12 ;
+13 [label="entropy = 1.083\nsamples = 1078\nvalue = [765, 65, 248]"] ;
+12 -> 13 ;
+14 [label="entropy = 1.251\nsamples = 1524\nvalue = [999, 341, 184]"] ;
+12 -> 14 ;
+}
